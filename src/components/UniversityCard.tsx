@@ -9,7 +9,7 @@ interface UniversityCardProps {
 }
 
 function UniversityCard(props: UniversityCardProps) {
-  const { shortName, name, web_pages, ...university } = props.university;
+  const { shortName, name, web_pages } = props.university;
 
   const webPages = web_pages.join(", ");
 
