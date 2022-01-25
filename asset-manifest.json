@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/worldwide-universities-app/static/css/main.1a8a0596.css",
-    "main.js": "/worldwide-universities-app/static/js/main.b01eb312.js",
+    "main.js": "/worldwide-universities-app/static/js/main.468169a5.js",
     "static/js/787.cda02829.chunk.js": "/worldwide-universities-app/static/js/787.cda02829.chunk.js",
     "index.html": "/worldwide-universities-app/index.html",
     "main.1a8a0596.css.map": "/worldwide-universities-app/static/css/main.1a8a0596.css.map",
-    "main.b01eb312.js.map": "/worldwide-universities-app/static/js/main.b01eb312.js.map",
+    "main.468169a5.js.map": "/worldwide-universities-app/static/js/main.468169a5.js.map",
     "787.cda02829.chunk.js.map": "/worldwide-universities-app/static/js/787.cda02829.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a0596.css",
-    "static/js/main.b01eb312.js"
+    "static/js/main.468169a5.js"
   ]
 }
