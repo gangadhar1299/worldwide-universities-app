@@ -8,6 +8,7 @@ import { Container, Logo } from "./components";
 import { COUNTRIES } from "./data/country-list";
 import Select, { SingleValue } from "react-select";
 import { Country, UniversitySearchOptions } from "./types";
+import debounceFn from "debounce-fn";
 import * as colors from "./styles/colors";
 import * as mq from "./styles/media-queries";
 
@@ -24,8 +25,14 @@ function App() {
 
   const [universityName, setUniversityName] = React.useState("");
 
+  const updateSearchQuery = (value: string) => setUniversityName(value);
+
+  const debouncedUpdateSearchQuery = debounceFn(updateSearchQuery, {
+    wait: 300,
+  });
+
   const handleSearchChange = (evt: React.ChangeEvent<HTMLInputElement>) =>
-    setUniversityName(evt.target.value);
+    debouncedUpdateSearchQuery(evt.target.value);
 
   const handleCountryChange = (option: SingleValue<Country>) => {
     if (option?.code) setCountry(option);
@@ -59,7 +66,6 @@ function App() {
         <SearchBar
           name="university-name"
           id="university-name"
-          value={universityName}
           placeholder="Enter University name to search"
           onChange={handleSearchChange}
         />
