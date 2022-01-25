@@ -113,9 +113,8 @@ function Universities({
 
   return (
     <div
-      className="pb-5"
+      className="pb-5 d-flex align-items-center justify-content-center"
       css={{
-        display: "flex",
         gap: "3em 6em",
         flexWrap: "wrap",
         "& > div": {

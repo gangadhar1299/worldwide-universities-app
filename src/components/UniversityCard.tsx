@@ -14,7 +14,10 @@ function UniversityCard(props: UniversityCardProps) {
   const webPages = web_pages.join(", ");
 
   return (
-    <div className="rounded px-3 py-5 shadow d-flex flex-column align-items-center">
+    <div
+      className="rounded px-3 py-5 shadow d-flex flex-column align-items-center"
+      css={{ maxWidth: "30em" }}
+    >
       <div
         className="rounded-circle shadow p-3 d-flex align-items-center justify-content-center"
         css={{
